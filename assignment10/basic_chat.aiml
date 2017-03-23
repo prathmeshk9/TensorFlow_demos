@@ -1,0 +1,43 @@
+<aiml version="1.0.1" encoding="UTF-8">
+	<category>
+		<pattern>HELLO</pattern>		
+		<template>
+			Hi , I am chatbot
+		</template>
+	</category>
+	<category>
+		<pattern>hi</pattern>		
+		<template>
+			Hi , Nice To Meet You.
+		</template>
+	</category>
+	<category>
+		<pattern>*</pattern>		
+		<template>
+			<random>
+				<li>Gon on.</li>
+				<li>How are You?</li>
+				<li>Be More Specific.</li>
+				<li>I did not know that.</li>
+				<li>Are you telling the truth?</li>
+				<li>I donot know what that menas.</li>
+				<li>Try top tell me that another way.</li>
+				<li>Are you talk about an animal, vegitable or mineral?</li>
+				<li>What is it?</li>
+			</random>
+		</template>
+	</category>
+	<category>
+      <pattern>I LIKE *</pattern>
+      <template>
+         I too like <star/>.
+      </template>
+   </category>
+   
+   <category>
+      <pattern>A * IS A *</pattern>
+      <template>
+         How <star index = "1"/> can not be a <star index = "2"/>?
+      </template>
+   </category>
+</aiml>
